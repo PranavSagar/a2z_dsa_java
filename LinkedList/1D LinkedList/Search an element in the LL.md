@@ -1,12 +1,9 @@
-# Insert Node At The Beginning
+# Search an element in the LL
+![ques](image-5.png)
 
-[CodeStudio](https://www.codingninjas.com/studio/problems/insert-node-at-the-beginning_8144739?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf
-)
+[CodeStudio-Easy](https://www.codingninjas.com/studio/problems/search-in-a-linked-list_975381?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf)
 
-
-![Alt text](image.png)
-## Code 
-
+## Code
 ```
 /****************************************************************
 
@@ -15,39 +12,43 @@
  class Node {
      public int data;
      public Node next;
-     public Node prev;
-
+    
      Node()
      {
          this.data = 0;
          this.next = null;
-         this.prev = null;
      }
-
+    
      Node(int data)
      {
          this.data = data;
          this.next = null;
-         this.prev = null;
      }
-
+    
      Node(int data, Node next)
      {
          this.data = data;
          this.next = next;
-         this.prev = next;
      }
- };
+ }
 
  *****************************************************************/
 
+
 public class Solution
 {
-    public static Node insertAtFirst(Node list, int newValue) {
-        Node newNode = new Node(newValue);
-        // Node newHead = newNode;
-        newNode.next = list;
-        return newNode;
+    public static int searchInLinkedList(Node head, int k)
+    {
+        if(head == null ) return 0;
+        Node newNode = head;
+        while(newNode!= null){
+            if(newNode.data == k){
+                return 1;
+            }
+            newNode = newNode.next;
+        }
+        return 0;
     }
 }
 ```
+
