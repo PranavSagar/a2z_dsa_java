@@ -1,6 +1,6 @@
 # a2z_dsa_java
 Last update ( 30 Aug 2023 )
-Step 1
+**Step 1**  
 : Learn the basics
 (0/31)
 Step 2
