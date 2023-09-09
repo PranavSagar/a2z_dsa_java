@@ -3,6 +3,7 @@
 
 [Leetcode - Medium](https://leetcode.com/problems/combination-sum-iv/?envType=daily-question&envId=2023-09-09)
 
+[CodeStuido - Medium](https://www.codingninjas.com/studio/problems/number-of-ways_3755252?leftPanelTab=1)
 
 Given an array of distinct integers nums and a target integer target, return the number of possible combinations that add up to target.
 
